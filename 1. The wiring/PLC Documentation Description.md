@@ -35,7 +35,7 @@ Industrial Shields PLC are programmed using Arduino IDE, which is a software bas
 1. Install Arduino IDE 1.8.0 or later on your machine (download [here](https://www.arduino.cc/en/software/))
 2. Open Arduino IDE
 3. Go to **File** > **Preferences**
-4. Put this [URL](https://apps.industrialshields.com/main/arduino/boards/package_industrialshields_index.json/) as a new **Additional Board Manager**:
+4. Put this URL: https://apps.industrialshields.com/main/arduino/boards/package_industrialshields_index.json/ as a new **Additional Board Manager**:
 5. Confirm this modification and exit Preferences with **Okay** (bottom right)
 6. Go to **Tools** > **Board**  > **Boards Manager**
 7. Search for the keyword “**industrialshields**”
