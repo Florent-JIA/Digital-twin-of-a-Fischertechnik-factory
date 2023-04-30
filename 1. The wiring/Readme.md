@@ -27,13 +27,13 @@ Note : this part might seem obvious but it actually took us a while (about 3 wee
 
 After correctly connecting the various wires, one can see lights at the top of the PLC. These lights correspond to the various inputs / outputs that are active. These lights are very useful since they allow you to test the different detectors and to test the outputs too.
 ![haut du PLC](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.9%20Haut_du_PLC.png)<br>
-For example, the detector of the SLD part that stands right after the furnace is connected to I2.7 on the PLC, thus when we activate the power the light associated to this input turns on at the top, and when we put an element in front of it it turns off. Thus, we can almost know everything that's happening in the factory just by looking at the top of the PLC.
+For example, the detector of the SLD part that stands right after the furnace is connected to I2.7 on the PLC, thus when we activate the power the light associated to this input turns on at the top, and when we put an element in front of it it turns off. Thus, we can almost know everything that's happening in the factory just by looking at the top of the PLC.<br>
 ![Haut_du_PLC_I2.7](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.10%20Haut_du_PLC_I2.7.png)<br>
 Finally, there are two columns to connect wires on the PLC, the one with small holes is meant to be temporary (the wires can be disconnected by simply pulling them), this column is very useful when checking the connections. However when the wiring part is over and well done, we recommend that you switch the wires to the other column (with big holes and orange security) so that they are not disconnected too easily.
  
 Note : of course the connection on the big holes is not irreversible, you just have to push the orange security with a screwdriver and to pull the wire.
  
-Note : the connection we did for the SLD part can be changed, however you will need to change the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet SLD for us)]() in consequence.
+Note : the connection we did for the SLD part can be changed, however you will need to change the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet SLD for us)]() in consequence.<br>
 ![branchement](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.11%20Branchement.png)<br>
 In order to give you a clear understanding of the wiring, a concrete example tracing the signal from the SLD module to the PLC [is available here]().
 
