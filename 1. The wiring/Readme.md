@@ -35,6 +35,6 @@ Note : of course the connection on the big holes is not irreversible, you just h
  
 Note : the connection we did for the SLD part can be changed, however you will need to change the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet SLD for us)](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/2022-10-18a_Belegungsplan_V2_EN-withITEM.xlsx/) in consequence.<br>
 ![branchement](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.11%20Branchement.png)<br>
-In order to give you a clear understanding of the wiring, a concrete example tracing the signal from the SLD module to the PLC [is available here]().
+In order to give you a clear understanding of the wiring, a concrete example tracing the signal from the SLD module to the PLC [is available here](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/Wiring%20Example.md/).
 
 The process previously described can be applied to other modules. If you choose to do so, do not forget to update the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet of your module)](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/2022-10-18a_Belegungsplan_V2_EN-withITEM.xlsx/) and to check every input and output (so that you don't have bad surprises in the code 😄  ).
