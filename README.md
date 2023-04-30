@@ -6,7 +6,7 @@ Dgital twin technology is an important part of Industry 4.0. This technology aim
 ## The wiring
 In this project we used a [Fischtechnik](https://www.fischertechnik.de/en/products/industry-and-universities/) factory model. The components of this factory model were not 100% connected before the project started. The different modules have already been conencted to the factory mother board. So, we needed to wire from the factory mother board to the PLC.
 ![wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.%20wiring%20to%20the%20mother%20board%20and%20to%20the%20PLC.png)
-For more information, please consult The [wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/1.%20The%20wiring) folder.
+For more information, please consult [The wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/1.%20The%20wiring/) folder.
 ## PLC code
 ## Dashboard
 ## 3D representation
