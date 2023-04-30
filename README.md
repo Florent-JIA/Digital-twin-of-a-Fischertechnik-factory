@@ -5,7 +5,7 @@ This is a complex project organized by my school. My teammates and I built a dig
 Dgital twin technology is an important part of Industry 4.0. This technology aims to rebuild a vitrual model in the virtual space that can reflect the working status of the factory in real time, so that the factory can be remotely monitored, controlled and diagnosed. Our work mainly contains 4 parts: 1) **the wiring**, 2) **PLC code**, 3) **dashboard** and 4) **3D representation**.
 ## The wiring
 In this project we used a [Fischtechnik](https://www.fischertechnik.de/en/products/industry-and-universities/) factory model. The components of this factory model were not 100% connected before the project started. The different modules have already been conencted to the factory mother board. So, we needed to wire from the factory mother board to the PLC.
- 
+![wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.%20wiring%20to%20the%20mother%20board%20and%20to%20the%20PLC.png)
 For more information, please consult The wiring folder.
 ## PLC code
 ## Dashboard
