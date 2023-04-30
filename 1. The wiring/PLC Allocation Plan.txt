@@ -1,1 +1,5 @@
+# PLC Allocation Plan
 
+The PLC Allocation Plan is available here (on IS's website).
+
+And stored in this wiki:
