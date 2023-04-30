@@ -32,7 +32,7 @@ On the sides of the PLC are multiple symbols to help understand the meaning of t
 Industrial Shields PLC are programmed using Arduino IDE, which is a software based on the C language. They can also be programmed using directly C but it is much easier working with Arduino IDE as it provides lots of libraries that helps in the programming. Industrial Shields provides boards for programming the PLCs much easier. Basically it is no needed to define the pins and if that pins are inputs or outputs. Everything is set up automatically if using the boards.
 
 ## Setting up the software interface
-1. Install Arduino IDE 1.8.0 or later on your machine (download [here](/))
+1. Install Arduino IDE 1.8.0 or later on your machine (download [here](https://www.arduino.cc/en/software/))
 2. Open Arduino IDE
 3. Go to **File** > **Preferences**
 4. Put this [URL](https://apps.industrialshields.com/main/arduino/boards/package_industrialshields_index.json/) as a new **Additional Board Manager**:
