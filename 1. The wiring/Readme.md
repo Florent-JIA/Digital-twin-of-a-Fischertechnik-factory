@@ -2,7 +2,7 @@
 This part is dedicated to the description of our work and comprehension of the wiring of the SLD part. However, the process to wire other modules is similar and this file can thus be reuse in the future.
  
 First of all, we had to understand the different documentations and the way the factory functioned. We used several resources to do so :
-- [the allocation of the factory modules to the PLC]()
+- [the allocation of the factory modules to the PLC](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/PLC%20Allocation%20Plan.md/)
 - [the requirements to activate the different parts of the PLC]()
  
 Now, the most important part is to understand how the information will flow from a composant to the PLC. In the picture below we can see that the information from the compressor of the SLD module is first transmitted to the mother board of the SLD module. Then the information runs into the grey cable and ends in the factory mother board. This means that every information coming from the factory by cable will end up in the factory mother board. The wiring to the factory mother board is already done so you just need to understand it (not doing it).
