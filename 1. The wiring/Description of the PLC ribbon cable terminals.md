@@ -1,5 +1,6 @@
 # PLC terminals description
-This is part of the [PLC Allocation Plan]().<br>
+This is part of the [PLC Allocation Plan]().
+<br>
 ![2.14](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.14image.png)<br>
 In this representation, we'll note that the "end" pins are used for ground or "global" commands. We'll ignore those first two pins except for careful testing of the factory operability. I pins are situated from 5 to 16, there are a maximum of 12 of them on one adaptor. Q pins are situated from 17 to 32, there are a maximum of 16 of them.<br>
 ![2.15](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.15image.png)<br>
