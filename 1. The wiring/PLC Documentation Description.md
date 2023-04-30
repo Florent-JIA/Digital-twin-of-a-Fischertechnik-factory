@@ -57,7 +57,7 @@ For outputs, the nature must be specified manually for the three (only two in zo
 ## PLC Pinnouts
 All the information can be found in the document, and most of it can be understood by looking at the PLCs. We'll take the example of zone B here. Zones C and D are organized in the same fashion.
 ![2.23](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.23%20image.png)
-We can see that on the first face of the PLC, the zone only holds inputs (color coded with a pale green background in the document). From the bottom of the PLC, we can first find the 5 digital only inputs (I0.0 -> I0.4). Above it is a couple of interrupt inputs (I0.5 - I0.6). They can serve specific functions for the PLC (see [here](/) for an explanation) . Above it are 6 inputs that can serve for both analog and digital signals (I0.7 -> I0.12).
+We can see that on the first face of the PLC, the zone only holds inputs (color coded with a pale green background in the document). From the bottom of the PLC, we can first find the 5 digital only inputs (I0.0 -> I0.4). Above it is a couple of interrupt inputs (I0.5 - I0.6). They can serve specific functions for the PLC (see [here](https://www.industrialshields.com/blog/arduino-industrial-1/post/how-to-use-interrupt-inputs-with-industrial-arduino-boards-278/) for an explanation) . Above it are 6 inputs that can serve for both analog and digital signals (I0.7 -> I0.12).
 
 On the table to the left, we can notice the Arduino Pins column, which gives us the ID of the pins to indicate on the Arduino IDE software.
 ![2.24](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.24%20image.png)
