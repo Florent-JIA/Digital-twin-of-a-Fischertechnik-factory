@@ -16,14 +16,14 @@ This representation of the motherboard allows us to map the slots of the motherb
 ![requirements of wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.6%20Lien_carte_m%C3%A8re_modules%202.png)
 Once we understood what each cable represented, we started connecting the output wires of the factory to the PLC. We decided to connect all the cables to one PLC (which makes it easier for the code later since we do not need to link several PLCs' inputs / outputs). We identified the pins that were involved in the SLD with the mapping from the motherboard and then connected the wires in the places we needed.
  
-We also created two mapping, one from the module part of the motherboard to the PLC and one from the PLC to the motherboard ; these two mapping are available on [this document (sheet "Mapping M-DUINO" and sheets of the modules)]() and are showing the same thing, we choose to maintain the two mapping since we want to avoid any issues and since one mapping can be easier to read given a specific situation.
+We also created two mapping, one from the module part of the motherboard to the PLC and one from the PLC to the motherboard ; these two mapping are available on [this document (sheet "Mapping M-DUINO" and sheets of the modules)](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/2022-10-18a_Belegungsplan_V2_EN-withITEM.xlsx/) and are showing the same thing, we choose to maintain the two mapping since we want to avoid any issues and since one mapping can be easier to read given a specific situation.
  
 As explained on the documentation, we connected the input on one side of the PLC (detectors and color sensor) whereas we connected the outputs on the other side (motor, compressor, ejectors) as shown on the next photos.
 ![wiring to PLC](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.7%20wiring%20to%20PLC.png)
 ![PLC output](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.8%20PLC_Output.png)
 On the input side we didn't need to add any wire (the power supply of the PLC was already connected) since we used the pins of the PLC with a ground directly activated. However on the output side, we had to add a power and a ground wire so that the different outputs can activate.
 
-Note : this part might seem obvious but it actually took us a while (about 3 weeks) to understand that we were lacking a ground with the different inputs and outputs. In order for next groups to gain time, we wrote the pins of the PLC that required ground or power in the [map of the PLC (sheet Mapping M-DUINO)]().
+Note : this part might seem obvious but it actually took us a while (about 3 weeks) to understand that we were lacking a ground with the different inputs and outputs. In order for next groups to gain time, we wrote the pins of the PLC that required ground or power in the [map of the PLC (sheet Mapping M-DUINO)](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/2022-10-18a_Belegungsplan_V2_EN-withITEM.xlsx/).
 
 After correctly connecting the various wires, one can see lights at the top of the PLC. These lights correspond to the various inputs / outputs that are active. These lights are very useful since they allow you to test the different detectors and to test the outputs too.
 ![haut du PLC](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.9%20Haut_du_PLC.png)<br>
@@ -33,8 +33,8 @@ Finally, there are two columns to connect wires on the PLC, the one with small h
  
 Note : of course the connection on the big holes is not irreversible, you just have to push the orange security with a screwdriver and to pull the wire.
  
-Note : the connection we did for the SLD part can be changed, however you will need to change the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet SLD for us)]() in consequence.<br>
+Note : the connection we did for the SLD part can be changed, however you will need to change the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet SLD for us)](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/2022-10-18a_Belegungsplan_V2_EN-withITEM.xlsx/) in consequence.<br>
 ![branchement](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.11%20Branchement.png)<br>
 In order to give you a clear understanding of the wiring, a concrete example tracing the signal from the SLD module to the PLC [is available here]().
 
-The process previously described can be applied to other modules. If you choose to do so, do not forget to update the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet of your module)]() and to check every input and output (so that you don't have bad surprises in the code 😄  ).
+The process previously described can be applied to other modules. If you choose to do so, do not forget to update the [map of the PLC (sheet Mapping M-DUINO) and the map of the motherboard (sheet of your module)](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/2022-10-18a_Belegungsplan_V2_EN-withITEM.xlsx/) and to check every input and output (so that you don't have bad surprises in the code 😄  ).
