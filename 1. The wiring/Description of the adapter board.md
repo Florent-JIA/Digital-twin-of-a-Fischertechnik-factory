@@ -1,5 +1,5 @@
 # Adapter board description
-This is part of the [PLC Allocation Plan](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/PLC%20Allocation%20Plan.md).
+This is part of the [PLC Allocation Plan](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/1.%20The%20wiring/PLC%20Allocation%20Plan.md/).
 
 Each module on the factory is connected to the PLC via an adapter board. On our model, the adaptor boards are already cabled. The grey ribbon cable is connected to the PLC connection board. On the other hand, the rainbow ribbon cables are connected to all the sensors and actuators of the model.
 ![2.12](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.12%20AdapterBoard.png)
