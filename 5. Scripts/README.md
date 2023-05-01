@@ -38,7 +38,7 @@ From this point onwards, the steps are specific to the PLC model described above
 <br>If you want to modify the 3D model, you have to install Unity (dowload [here](https://unity.com/fr/download/))
 
 **NodeRed**
-NodeRed is used to create the dashboard of our factory. To install it, type the following command in a terminal:
+<br>NodeRed is used to create the dashboard of our factory. To install it, type the following command in a terminal:
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 (website industrialshields [here](https://www.industrialshields.com/blog/arduino-industrial-1/post/arduino-tutorial-node-red-dashboard-and-arduino-web-server-440#:~:text=Node%2DRED%20is%20a%20programming,runtime%20in%20a%20single%20click/))
 
@@ -58,7 +58,7 @@ sudo systemctl start nodered.service
 Once NodeRed is installed and running you can go to the http://localhost:1880/ and import the json file to retrieve the dashboard.
 
 **Launching the digital twin**
-for that you have to follow the instructions:
+<br>for that you have to follow the instructions:
 
 In order to launch all the components (Dashboard, 3D model) we have made a bash script that allows to run the Unity executable in order to launch our 3D factory and to open a web page on the dashboard.
 
@@ -70,7 +70,7 @@ Before execution, it must be taken into account that the path to access the Unit
 
 Structure of the script :
 
-#!/bin/bash
+<br>#!/bin/bash
 <br>cd ~/Script_directory
 <br>./Name_of_executable_unity &
 
@@ -89,7 +89,7 @@ Before execution, it must be taken into account that the path to access the Unit
 
 Structure of the script :
 
-#!/bin/bash
+<br>#!/bin/bash
 <br>cd ~/Script_directory
 <br>./Name_of_executable_unity &
 
