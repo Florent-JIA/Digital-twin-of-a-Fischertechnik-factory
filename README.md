@@ -8,5 +8,8 @@ In this project we used a [Fischtechnik](https://www.fischertechnik.de/en/produc
 ![wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/2.%20wiring%20to%20the%20mother%20board%20and%20to%20the%20PLC.png)
 For more information, please consult [The wiring](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/1.%20The%20wiring/) folder.
 ## PLC code
+Due to time constraints, we mainly work on the SLD (Sorting Line based on color Detection) module. We wrote an Arduino program to activate the operation of this modulem and tansmit the working status changes detected by sensors to the server in real time.
+
+For more informaiton, please consult [SLD Code](/) floder.
 ## Dashboard
 ## 3D representation
