@@ -17,4 +17,9 @@ For more informaiton, please consult [PLC code](https://github.com/Weizhe-JIA/2.
 ![work flow of SLD code](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.2%20State_diaram_ProCom__1_.png)
 <br>**(g) work flow of PLC code**
 ## Dashboard
+We used a software called Node Red to buil a dashboard to display the working status of each component of the SLD module.
+
+For more informaiton, please consult [Dshboard](/) floder.
+![Dashboard](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
+<br>**(h)Dahsboard**
 ## 3D representation
