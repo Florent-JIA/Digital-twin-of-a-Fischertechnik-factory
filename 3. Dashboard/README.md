@@ -1,1 +1,50 @@
 # Node Red Installation
+The installation of applications on the computer of our office is confidential. So, we invited a teacher who has confidential ID to give us the access to install NodeRed on the computer.
+
+NodeRed is used to create the dashboard of our factory. To install it, type the following command in a terminal:
+
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+
+(website industrialshields [here](https://www.industrialshields.com/blog/arduino-industrial-1/post/arduino-tutorial-node-red-dashboard-and-arduino-web-server-440#:~:text=Node%2DRED%20is%20a%20programming,runtime%20in%20a%20single%20click/))
+
+During installation, you must have the administrator role. To do this, you need to run the following commands
+
+1. start a session with the user
+2. open a terminal, and change to superuser with su (someone who knows the root password of the machine must be present)
+3. apt update; apt install sudo
+4. adduser user sudo
+5. restart the sudo user's session.
+
+Run the following command if you want Node-RED to run when the open source PLC is turned on, or re-booted.
+
+sudo systemctl enable nodered.service
+
+sudo systemctl start nodered.service
+
+Once NodeRed is installed and running you can go to the http://localhost:1880/ and import the json file to retrieve the dashboard.
+
+# Creation of Dashboard
+To create the dashboard, we used the industrialShield tutorial. You can find this tutorial by following this link
+
+In the section "Node-RED Dashboard Nodes", you can find out how to install the package needed to build the dashboard. In the following section, you will find instructions on how to Get input data from the server.
+
+For the Dashboard of the SLD part. we obtain the following result:
+![Work flow of the dashboard](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.7%20FlowAll.png)
+This flow is composed of different parts.
+
+Retrieving and displaying data :
+![Retrieving and displaying data](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.8%20Motor.png)
+
+Putting on coloured gauges :
+![Putting on coloured gauges](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.9%20Colors.png)
+
+Show notifications :
+![Show notifications](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.10%20Notif.png)
+
+Interacting with the factory :
+![Interacting with the factory](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.11%20Interaction.png)
+
+You can find more information for this part in the page [Interaction with the factory](/).
+
+Final Result:
+![Final Result](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
