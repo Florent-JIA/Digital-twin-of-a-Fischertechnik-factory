@@ -40,5 +40,5 @@ We have chosen to keep the same IP address as in the following tutorial. So we h
 
 Then, when the client or browser makes the request by HTTP, our PLC will serve the data and it can be seen in the same browser. In our case, the client will be the dashboard which will make a request to our web server
 
-The code to set up the Web Server is in the SLD-Connected.ino file [here](/).
-![web server](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.5%20WebServer.png)
+The code to set up the Web Server is in the SLD-Connected.ino file [here](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/2.%20PLC%20code/SLD-Connected.ino/).
+<br>![web server](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.5%20WebServer.png)
