@@ -19,7 +19,7 @@ For more informaiton, please consult [PLC code](https://github.com/Weizhe-JIA/2.
 ## Dashboard
 We used a software called Node Red to buil a dashboard to display the working status of each component of the SLD module.
 
-For more informaiton, please consult [Dshboard](/) floder.
+For more informaiton, please consult [Dshboard](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/3.%20Dashboard/) floder.
 ![Dashboard](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
-<br>**(h)Dahsboard**
+<br>**(h) Dashboard**
 ## 3D representation
