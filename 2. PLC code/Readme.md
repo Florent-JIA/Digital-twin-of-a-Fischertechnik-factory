@@ -25,3 +25,20 @@ Note : Do not forget to comment your code a lot so that the next team won't be l
 Note : The code we realised can only handle one element at a time. It is possible to make it able to handle several elements using lists and queues, however it implies great changes in Arduino, in Unity and in Node-red and we realised that quite late which is why we only cared about one element.
 
 Note : Our code has been designed so that it can be integrated with other modules of the factory. Indeed, in the "Loop" method, we call the "sld" method which makes the SLD module works, you are then able to add other methods called by your modules'names so that the "Loop" method remains understandable.
+
+# HTTP Web Server
+All the explication are taken from the IndustrialShield tutorials that you can find [here](https://www.industrialshields.com/blog/arduino-industrial-1/post/arduino-web-server-tutorial-438/)
+
+We used Arduino to create a simple web page. By utilizing the Ethernet Library and leveraging industrial automation and Arduino automation technologies, we can respond to an HTTP request using the Ethernet shield. When you open a browser and navigate to your Arduino-based PLC's IP address with Ethernet, the Arduino will provide sufficient HTML to display input values from all six analog pins on the browser.
+![work flow of web server](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.3%20WebServer.png)
+<br>In the Arduino code (1) that we have uploaded to our PLCs, we can retrieve the status and value of each sensor that makes up our SLD module. In our case, everything is local, so the PC is directly connected to the model with an ethernet cable
+![Web server wire](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.4%20WebServerWire.png)
+We have chosen to keep the same IP address as in the following tutorial. So we have
+
+- IP address from laptop: 10.10.10.60
+- IP address from M-Duino PLC: 10.10.10.30
+
+Then, when the client or browser makes the request by HTTP, our PLC will serve the data and it can be seen in the same browser. In our case, the client will be the dashboard which will make a request to our web server
+
+The code to set up the Web Server is in the SLD-Connected.ino file [here](/).
+![web server](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.5%20WebServer.png)
