@@ -35,7 +35,7 @@ From this point onwards, the steps are specific to the PLC model described above
 4. In Tools > Port select the appropriate port
 
 **Unity (for develop)**
-If you want to modify the 3D model, you have to install Unity (dowload [here](https://unity.com/fr/download/))
+<br>If you want to modify the 3D model, you have to install Unity (dowload [here](https://unity.com/fr/download/))
 
 **NodeRed**
 NodeRed is used to create the dashboard of our factory. To install it, type the following command in a terminal:
