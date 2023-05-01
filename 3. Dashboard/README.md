@@ -44,7 +44,5 @@ Retrieving and displaying data :
 <br>Interacting with the factory :
 <br>![Interacting with the factory](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.11%20Interaction.png)
 
-<br>You can find more information for this part in the page [Interaction with the factory](/).
-
 <br>Final Result:
 <br>![Final Result](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
