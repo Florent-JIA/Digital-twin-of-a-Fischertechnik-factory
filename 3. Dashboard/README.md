@@ -36,15 +36,15 @@ Retrieving and displaying data :
 ![Retrieving and displaying data](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.8%20Motor.png)
 
 <br>Putting on coloured gauges :
-![Putting on coloured gauges](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.9%20Colors.png)
+<br>![Putting on coloured gauges](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.9%20Colors.png)
 
-Show notifications :
-![Show notifications](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.10%20Notif.png)
+<br>Show notifications :
+<br>![Show notifications](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.10%20Notif.png)
 
-Interacting with the factory :
-![Interacting with the factory](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.11%20Interaction.png)
+<br>Interacting with the factory :
+<br>![Interacting with the factory](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.11%20Interaction.png)
 
-You can find more information for this part in the page [Interaction with the factory](/).
+<br>You can find more information for this part in the page [Interaction with the factory](/).
 
 <br>Final Result:
-![Final Result](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
+<br>![Final Result](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
