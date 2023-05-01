@@ -35,7 +35,7 @@ This flow is composed of different parts.
 Retrieving and displaying data :
 ![Retrieving and displaying data](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.8%20Motor.png)
 
-Putting on coloured gauges :
+<br>Putting on coloured gauges :
 ![Putting on coloured gauges](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.9%20Colors.png)
 
 Show notifications :
@@ -46,5 +46,5 @@ Interacting with the factory :
 
 You can find more information for this part in the page [Interaction with the factory](/).
 
-Final Result:
+<br>Final Result:
 ![Final Result](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
