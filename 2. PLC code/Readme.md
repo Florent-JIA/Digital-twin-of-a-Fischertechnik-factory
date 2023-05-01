@@ -14,7 +14,7 @@ Note : In order to have a landmark on the conveyer belt (to know where we are wi
 
 Now that we see what we are talking about and that we know what we want to do, we need to make a state graph with the different inputs and outputs involved in each part of the SLD module :
 ![work flow of the PLC code](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.2%20State_diaram_ProCom__1_.png)
-We are now able to code the different parts / states of the SLD module and make them communicate. Our code for the functioning of the SLD module is available here : [Fonctionnement_SLD.ino](/)
+<br>We are now able to code the different parts / states of the SLD module and make them communicate. Our code for the functioning of the SLD module is available here : [Fonctionnement_SLD.ino](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/2.%20PLC%20code/Fonctionnement_SLD.ino/)
 
 Note : There is no need to define the pinmodes in comparison to many other Arduino projects since the IndustrialShield board understands which pin we are calling by itself. Moreover, you can either call a pin by its number ("66") or by its name ("I2.7").
 
