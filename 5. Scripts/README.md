@@ -3,10 +3,15 @@
 ### Install all tools
 **Git**
 In order to recover all the elements of the project, you must start by cloning the project
+
 git clone git@gitlab.imt-atlantique.fr:idf/dtfischertechnik.git with a ssh
+
 or
+
 git clone https://gitlab.imt-atlantique.fr/idf/dtfischertechnik.git with https
+
 then retrieve the different parts of the project with the command
+
 git pull
 
 **Arduino IDE**
@@ -66,9 +71,11 @@ Before execution, it must be taken into account that the path to access the Unit
 Structure of the script :
 
 #!/bin/bash
-cd ~/Script_directory
-./Name_of_executable_unity &
+<br>cd ~/Script_directory
+<br>./Name_of_executable_unity &
+
 Open a web page in parallel
+
 firefox "link_nodered"
 
 ## Script to launch Unity and the dashboard
@@ -83,8 +90,8 @@ Before execution, it must be taken into account that the path to access the Unit
 Structure of the script :
 
 #!/bin/bash
-cd ~/Script_directory
-./Name_of_executable_unity &
+<br>cd ~/Script_directory
+<br>./Name_of_executable_unity &
 
 Open a web page in parallel
 
