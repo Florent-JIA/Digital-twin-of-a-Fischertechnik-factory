@@ -17,9 +17,12 @@ For more informaiton, please consult [PLC code](https://github.com/Weizhe-JIA/2.
 ![work flow of SLD code](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.2%20State_diaram_ProCom__1_.png)
 <br>**(g) work flow of PLC code**
 ## Dashboard
-We used a software called Node Red to buil a dashboard to display the working status of each component of the SLD module.
+We used a software called **Node Red** to buil a dashboard to display the working status of each component of the SLD module.
 
 For more informaiton, please consult [Dashboard](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/3.%20Dashboard/) floder.
 ![Dashboard](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.6%20Dashboard.png)
 <br>**(h) Dashboard**
 ## 3D representation
+The core of the digital twin is to create a virtual model of the factory in the virtual space. The oparation of this virtual model is consistent with the real factory and can provide more information as required. We used **Unity** to create a digital twin for our factroy model.
+
+For more informaiton, please consult [3D representation](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/4.%203D%20representation/) floder.
