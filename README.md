@@ -26,3 +26,5 @@ For more informaiton, please consult [Dashboard](https://github.com/Weizhe-JIA/2
 The core of the digital twin is to create a virtual model of the factory in the virtual space. The oparation of this virtual model is consistent with the real factory and can provide more information as required. We used **Unity** to create a digital twin for our factroy model.
 
 For more informaiton, please consult [3D representation](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/4.%203D%20representation/) floder.
+<br>![digital twin of SLD](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.digital%20twin%20of%20SLD.png)
+<br>**(i) digital twin of the SLD module**
