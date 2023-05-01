@@ -162,5 +162,24 @@ For this final test, a couple of ameliorations have been made to make the animat
 Video demonstration:
 
 ## Simulating the factory functionning in Unity
+In order to make the Digital Twin "move" when the factory "moves" then we need to share the information between the different software and give the 3D-representation some instructions through scripts and methods.
+
+We were advised to add some augmented reality to our simulation, thus, when an element crosses a detector, the detctor changes its color to yellow (which makes the real place of the element even more understandable in the digital twin).
+
+In our module (SLD), an element moves on the conveyer belt, in the Arduino Code we used spatial position with pulses since the motor might not be regular and it was more reliable to use space position than time position. However, in Unity we used time movement, when the motor is "on" then the element moves at a given speed (empirically calculated). This method is not perfect, however it is much more simple to implement.
+
+To show the elements in the factory, we created some cylinders and we put them in a file "Elements" in the arborescence. The cylinders with associated colors correspond to the elements in their compartment which we show or hide whether the associated detector is activated or not. Then we use the element "Cylinder" to show the moving element on the conveyer belt, to do so we use a little trick, we hide the element at the begining of the simulation, then we create a copy when an element is detected at the input of the module and we make that copy move. This allows us to make several runs within the module without any issues.
+![3.36](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.36%20UnityElement.png)
+
+Note : we didn't make the animation for the fall of an element in its compartment both because we didn't know how to do it and because it might show false information (the element can be pushed but remains on the conveyer belt).
 
 ## Converting Unity project in executable
+What is interesting in Unity is that you can develop your animations and stuff on one hand and then use it in an executable whenever and wherever you want (without needing unity installed). However, there is a little process to follow in order to do it clean :
+
+- once you finished creating your "game", go to "File" > "Build Settings".
+- then select Linux (or the exploitation system you want).
+- if you want a specific width and height of window for your game, go to "Player Settings" > "Player" > "Resolution and Presentation" and then select the values you wish.
+- then go back to the "Build Settings" window and select "Build", the operation will take a few moments.
+![3.37](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.37%20BuildSettings.png)
+
+Note : it is possible to do the download on WebGL HTML 5 instead of executable but you will then need the appropriate module in Unity (this note is for the transfer on a server).
