@@ -73,6 +73,94 @@ If an older version of the file is there, delete it beforehand instantiated pref
 ![3.27](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.27%20image.png)
 Hit the start button to launch the scene and check if everything's working properly. There we are, the piston moved once at the start of the scene. Now the main goal is to use the animator to trigger the animation from scripts and start linking it with the control layer of the system.
 
+### 3D model control
+This step goes after the 3D model animation step. The goal of this step is to start implementing control in the digital twin of the factory. We'll continue on the example of a piston (simple back and forth translation) for the SLD part.
+
+This is inspired from the video [here](https://www.youtube.com/watch?v=tveRasxUabo/).
+
+1. Create a new default state and call it "Empty" by right clicking the animator panel and selecting Create State > Empty. Set it as the default state from the start by right clicking it and selecting Set as Layer default state.
+![3.28](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.28%20image.png)
+![3.29](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.29%20image.png)
+
+2. Duplicate the state you used before.
+3. Rename the duplicate as "PullPiston0" and change its animation speed to -5.
+
+By this point, you should have two "grey" blocks with an inspector status just like those:
+![3.30](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.30%20image.png)
+![3.31](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.31%20image.png)
+
+4. Create transitions between your states:
+
+- From empty to push
+- From push to pull
+ -From pull to empty
+
+By this point you should have a structure just like this.
+![3.32](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.32%20image.png)
+
+5. Now we need to add conditions on those transitions. Right now, the states will just play one after the other, but that's not what we want, we want to trigger those transitions on specific timings. To do so, the first step is to create the Trigger parameters. On the top left of the animator select the parameters tab.
+![3.33](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.33%20image.png)
+
+6. Now add some parameters of type Trigger and name them accordingly. 7. Select the first transition (empty->push) by left-clicking on the arrow. 8. Add a condition to this transition, and set it to the pushTrigger you just created.
+![3.34](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.34%20image.png)
+Now, when the trigger will be used with the finite state machine in the "empty" state, the piston will enter the push state and start moving forward.
+
+7. Add a condition on the push -> pull transition in the same way (just change the trigger used).
+
+There's no need to add a condition on the third transition, we want to always go back to the empty state as soon as the pull state animation is finished.
+
+Now that the animator is set up, we just need to trigger the triggers using a C# script. The C# script under needs to be added as a component at the same place as the animator is (aka on the SLD module object itself).
+
+//Default imports
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+//Class definition, every script must extend the MonoBahaviour type from Unity
+public class ControlAnimationPistons : MonoBehaviour
+{
+    
+    private Animator animator;//script variable to store the other component of the object we want to interact with, there, its animator
+    // Start is called before the first frame update
+    void Start()
+    {
+		animator = this.GetComponent<Animator>();//assign the value of the animator component
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+		if (animator != null) //check that there's an animator
+		{
+			if (Input.GetKeyDown(KeyCode.O))//check if the O letter key is pressed down
+			{
+				animator.SetTrigger("PushTrigger0");//set the trigger for the push transition
+			}
+			if (Input.GetKeyDown(KeyCode.P))
+			{
+				animator.SetTrigger("PullTrigger0");//set the trigger for the pull transition
+			}
+		}
+    }
+}
+
+However, things can get more complicated than a single piston, and we want to manage some animations "independently" from each other. That's why Unity animator has a layer feature. In this example, we want to parallelize the control of the multiple pistons. We suppose we have three different animations in the fbx file, that each corresponds to a single piston.
+
+- Go on the Layers tab in the animator top left corner, and add a new layer under the base layer we have.
+- Name this layer according to the object it will control.
+- Change its parameters. Here, we want it to have a full weight (our layers do not have any colliding impact zones, so we don't need to ponderate) and set its blending to additive. That means that the deformations of the armature (bones) made on this layer will add to those already made on the first layer. A A should appear next to the parameter wheel if the blending is properly changed.
+![3.35](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.35%20image.png)
+
+- Copy all the states in the first layer and paste them to the second layer (the state machine has the same topology for both pistons). 5. Update the values in the topology: make the empty state as the default state (orange), change transition triggers, change Motion of the active states.
+
+Once this has been done with the two other pistons, we can check how it works by using the script below. This script is barely more complex than the one above, it triggers the second and third pistons one and two second after the first one.
+
+For this final test, a couple of ameliorations have been made to make the animations more responsive: the two conditioned transitions are set to Has exit time = False. They are triggered whenever the previous animation is playing and not only at the end. Moreover, in the script, opposite triggers reset each other. That means that there are no "stored" triggers in the system: if pressing once O while the system is in the push state, the trigger is set to true, and as soon as the empty state is reached back, it will go to the push state. By adding a reset when pressing P, we're sure that the O trigger is off when we exit the push state.
+
+[ControlAnimationPistons.cs](/)
+
+Video demonstration:
+
 ## Simulating the factory functionning in Unity
 
 ## Converting Unity project in executable
