@@ -3,16 +3,16 @@
 ### Install all tools
 **Git**
 In order to recover all the elements of the project, you must start by cloning the project
-
-git clone git@gitlab.imt-atlantique.fr:idf/dtfischertechnik.git with a ssh
-
-or
-
-git clone https://gitlab.imt-atlantique.fr/idf/dtfischertechnik.git with https
-
-then retrieve the different parts of the project with the command
-
-git pull
+ 
+<br>git clone git@gitlab.imt-atlantique.fr:idf/dtfischertechnik.git with a ssh
+ 
+<br>or
+ 
+<br>git clone https://gitlab.imt-atlantique.fr/idf/dtfischertechnik.git with https
+ 
+<br>then retrieve the different parts of the project with the command
+ 
+<br>git pull
 
 **Arduino IDE**
 1. Install Arduino IDE 1.8.0 or later on your machine (download [here](https://www.arduino.cc/en/software/))
