@@ -157,7 +157,7 @@ Once this has been done with the two other pistons, we can check how it works by
 
 For this final test, a couple of ameliorations have been made to make the animations more responsive: the two conditioned transitions are set to Has exit time = False. They are triggered whenever the previous animation is playing and not only at the end. Moreover, in the script, opposite triggers reset each other. That means that there are no "stored" triggers in the system: if pressing once O while the system is in the push state, the trigger is set to true, and as soon as the empty state is reached back, it will go to the push state. By adding a reset when pressing P, we're sure that the O trigger is off when we exit the push state.
 
-[ControlAnimationPistons.cs](/)
+[ControlAnimationPistons.cs](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/4.%203D%20representation/ControlAnimationPistons.cs/)
 
 Video demonstration:
 
