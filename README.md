@@ -10,6 +10,6 @@ For more information, please consult [The wiring](https://github.com/Weizhe-JIA/
 ## PLC code
 Due to time constraints, we mainly work on the SLD (Sorting Line based on color Detection) module. We wrote an Arduino program to activate the operation of this modulem and tansmit the working status changes detected by sensors to the server in real time.
 
-For more informaiton, please consult [SLD Code](/) floder.
+For more informaiton, please consult [SLD code](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/tree/main/2.%20PLC%20code/) floder.
 ## Dashboard
 ## 3D representation
