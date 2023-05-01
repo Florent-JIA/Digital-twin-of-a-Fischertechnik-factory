@@ -15,6 +15,6 @@ For more informaiton, please consult [PLC code](https://github.com/Weizhe-JIA/2.
 **(f) the plan of the SLD module**
 
 ![work flow of SLD code](https://github.com/Weizhe-JIA/2.Digital-twin-of-a-Fischertechnik-factory/blob/main/imgs/3.2%20State_diaram_ProCom__1_.png)
-<br>**work flow of PLC code**
+<br>**(g) work flow of PLC code**
 ## Dashboard
 ## 3D representation
